@@ -21,6 +21,6 @@ FROM {{ref('j2l_pne_cast1')}}
 -- Final SELECT statement combining the outputs of all CTEs
 SELECT
   *,
-  CAST(EXTRACT(MONTH FROM "Month") AS integer) AS "Month_Num",
+  TO_CHAR("Month", 'mon') AS "Month_Name",
   CAST(EXTRACT(YEAR FROM "Month") AS integer) AS "Year"
 FROM cte1
