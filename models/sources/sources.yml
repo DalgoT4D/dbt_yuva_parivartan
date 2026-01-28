@@ -1,0 +1,11 @@
+version: 2
+sources:
+- name: staging_raw
+  schema: staging_raw
+  tables:
+  - name: J2L__PnE__SPINE_HR_FINANCE
+    identifier: J2L__PnE__SPINE_HR_FINANCE
+    description: ''
+  - name: _Main_Table
+    identifier: _Main_Table
+    description: ''
